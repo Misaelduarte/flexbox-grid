@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #23022E;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:disabled {
+  opacity: .5;
+}
+
+html {
+  @media screen(max-width: 1120px) {
+    font-size: 95.5%;
+  }
+
+  @media screen(max-width: 920px) {
+    font-size: 83.7%;
+  }
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    height: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem;
+}
+
+.container .logo {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.container .logo img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.container .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.container .menu ul {
+  display: flex;
+}
+
+.container .menu ul li {
+  padding: .625rem;
+  cursor: pointer;
+}
+
+.container .menu ul .active {
+  background: #573280;
+  border-radius: 0.314rem;
+  margin-left: 1rem;
+
+  transition: filter .2s;
+}
+
+.container .menu ul .active:hover {
+  filter: brightness(.9);
+}
+
+#main {
+  margin-bottom: 3rem;
+}
+
+#main .container-main {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 1.5rem;
+}
+
+#main .container-main .section-main-left,
+#main .container-main .section-main-right {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  background: #573280;
+}
+
+#main .container-main .section-main-left {
+  cursor: pointer;
+}
+
+#main .container-main .section-main-right {
+  justify-content: flex-end;
+}
+
+#main .main-header {
+  margin-bottom: 1.5rem;
+}
+
+#main .main-header h1 {
+  font-weight: 900;
+}
+
+#main .main-content {
+  font-size: .85rem;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+}
+
+footer .container .copyright {
+  font-size: .8rem;
+  color: #ddd;
+  display: flex;
+  align-items: flex-end;
+}
